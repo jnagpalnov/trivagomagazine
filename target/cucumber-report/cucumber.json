@@ -1,0 +1,119 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 40628094054,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the Home page",
+            "match": {
+              "location": "BackgroundSteps.navigateToHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 10,
+            "value": "#|Canada|"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 11068827800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setUP()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Search destination using search bar",
+        "description": "",
+        "id": "search;search-destination-using-search-bar;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2046162522,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8039618504,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search \"Midwest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Midwest",
+                  "offset": 13
+                }
+              ],
+              "location": "HomePageSteps.search(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3002601547,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search results should contain articles for \"Midwest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Midwest",
+                  "offset": 44
+                }
+              ],
+              "location": "HomePageSteps.verifySearchResults(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]
