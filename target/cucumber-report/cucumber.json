@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 40628094054,
+              "duration": 23108909379,
               "status": "passed"
             },
             "line": 3,
@@ -24,16 +24,10 @@
         ]
       },
       {
-        "comments": [
-          {
-            "line": 10,
-            "value": "#|Canada|"
-          }
-        ],
         "before": [
           {
             "result": {
-              "duration": 11068827800,
+              "duration": 12500977467,
               "status": "passed"
             },
             "match": {
@@ -41,14 +35,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Search destination using search bar",
+        "line": 17,
+        "name": "Navigate to a destination through the top left menu",
         "description": "",
-        "id": "search;search-destination-using-search-bar;;2",
+        "id": "navigationmenu;navigate-to-a-destination-through-the-top-left-menu;;2",
         "after": [
           {
             "result": {
-              "duration": 2046162522,
+              "duration": 2038956193,
               "status": "passed"
             },
             "match": {
@@ -61,7 +55,263 @@
         "steps": [
           {
             "result": {
-              "duration": 8039618504,
+              "duration": 1398102543,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click the top left navigation menu icon",
+            "match": {
+              "location": "HomePageSteps.clickTopLeftMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13869096106,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Destination menu cards should be displayed",
+            "match": {
+              "location": "HomePageSteps.verifyDestinationMenuCards(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "West"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Southwest"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Midwest"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Northeast"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Southeast"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 376019880,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks the \"West\" menu card",
+            "match": {
+              "arguments": [
+                {
+                  "val": "West",
+                  "offset": 17
+                }
+              ],
+              "location": "HomePageSteps.clickDestinationMenuCard(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12133247038,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is navigated to the \"West\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "West",
+                  "offset": 26
+                }
+              ],
+              "location": "DestinationPageSteps.verifyDestinationPageContents(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NavigationMenu",
+    "description": "",
+    "id": "navigationmenu",
+    "keyword": "Feature",
+    "uri": "NavigationMenu.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13426918799,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the Home page",
+            "match": {
+              "location": "BackgroundSteps.navigateToHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8849864338,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setUP()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Search destination using search bar",
+        "description": "",
+        "id": "search;search-destination-using-search-bar;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1242972079,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2861606016,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search \"Canada\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Canada",
+                  "offset": 13
+                }
+              ],
+              "location": "HomePageSteps.search(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1252820406,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search results should contain articles for \"Canada\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Canada",
+                  "offset": 44
+                }
+              ],
+              "location": "HomePageSteps.verifySearchResults(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7743813702,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the Home page",
+            "match": {
+              "location": "BackgroundSteps.navigateToHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5637592811,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setUP()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Search destination using search bar",
+        "description": "",
+        "id": "search;search-destination-using-search-bar;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1954680914,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 907281314,
               "status": "passed"
             },
             "line": 6,
@@ -82,7 +332,7 @@
           },
           {
             "result": {
-              "duration": 3002601547,
+              "duration": 1295749256,
               "status": "passed"
             },
             "line": 7,
@@ -100,12 +350,6 @@
               0
             ],
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@smoke"
           }
         ]
       }

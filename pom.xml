@@ -36,11 +36,6 @@
             <version>1.2.5</version>
             <scope>test</scope>
         </dependency>
-       <!-- <dependency>
-            <groupId>com.trivago.rta</groupId>
-            <artifactId>cluecumber-report-plugin</artifactId>
-            <version>1.4.2</version>
-        </dependency>-->
     </dependencies>
     <build>
     <plugins>

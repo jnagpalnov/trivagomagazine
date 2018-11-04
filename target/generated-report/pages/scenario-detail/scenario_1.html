@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.4.2] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.4.2]"> 
-  <title>Scenario Details - 2018/11/05 00:23:07</title> 
+  <title>Scenario Details - 2018/11/05 04:17:42</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link rel="stylesheet" href="css/cluecumber.css" type="text/css"> 
   <link rel="stylesheet" href="css/cluecumber_custom.css"> 
@@ -41,13 +41,13 @@
      <li class="nav-item"> <a class="nav-link" href="pages/scenario-sequence.html">Scenario Sequence</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2018/11/05 00:23:07</span> 
+    <span class="text-light">2018/11/05 04:17:42</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenario 'Search destination using search bar'</h3> 
+     <h3>Scenario 'Navigate to a destination through the top left menu'</h3> 
     </div> 
     <script>
         function resizeIframe(obj) {
@@ -74,10 +74,10 @@
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
-         <li class="list-group-item">3 Step(s)</li> 
-         <li class="list-group-item"> 3 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 0 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"></i> 0 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"></i> </li> 
-         <li class="list-group-item">Duration: 1m 04s 785ms</li> 
-         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_smoke.html">@smoke</a> </li> 
+         <li class="list-group-item">5 Step(s)</li> 
+         <li class="list-group-item"> 5 <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 0 <i class="text-danger cluecumber-icon icon-failed" data-toggle="tooltip" title="failed"></i> 0 <i class="text-warning cluecumber-icon icon-skipped" data-toggle="tooltip" title="skipped"></i> </li> 
+         <li class="list-group-item">Duration: 1m 05s 425ms</li> 
+         <li class="list-group-item"> </li> 
         </ul> 
        </div> 
       </div> 
@@ -99,7 +99,7 @@
            <i>BaseSteps.setUP()</i> 
           </div> 
           <div class="col-2 text-left small">
-            0m 11s 068ms 
+            0m 12s 500ms 
           </div> 
           <div class="col-1 text-right"> 
            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
@@ -123,7 +123,7 @@
            <span data-toggle="tooltip" title="BackgroundSteps.navigateToHomePage()"> Given User is on the Home page </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 40s 628ms 
+            0m 23s 108ms 
           </div> 
           <div class="col-1 text-right"> 
            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
@@ -134,10 +134,10 @@
            2.
           </div> 
           <div class="col-8 text-left"> 
-           <span data-toggle="tooltip" title="HomePageSteps.search(String)"> When User search "<strong>Midwest</strong>" </span> 
+           <span data-toggle="tooltip" title="HomePageSteps.clickTopLeftMenu()"> When User click the top left navigation menu icon </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 08s 039ms 
+            0m 01s 398ms 
           </div> 
           <div class="col-1 text-right"> 
            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
@@ -148,10 +148,61 @@
            3.
           </div> 
           <div class="col-8 text-left"> 
-           <span data-toggle="tooltip" title="HomePageSteps.verifySearchResults(String)"> Then Search results should contain articles for "<strong>Midwest</strong>" </span> 
+           <span data-toggle="tooltip" title="HomePageSteps.verifyDestinationMenuCards(DataTable)"> Then Destination menu cards should be displayed </span> 
           </div> 
           <div class="col-2 text-left small">
-            0m 03s 002ms 
+            0m 13s 869ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
+          </div> 
+          <div class="row w-100 p-3 m-0 scenarioDataTable"> 
+           <div class="w-100 text-left border border-dark table-responsive"> 
+            <table class="table table-hover small table-striped text-left pb-0"> 
+             <tbody>
+              <tr> 
+               <td>West</td> 
+              </tr> 
+              <tr> 
+               <td>Southwest</td> 
+              </tr> 
+              <tr> 
+               <td>Midwest</td> 
+              </tr> 
+              <tr> 
+               <td>Northeast</td> 
+              </tr> 
+              <tr> 
+               <td>Southeast</td> 
+              </tr> 
+             </tbody>
+            </table> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           4.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="HomePageSteps.clickDestinationMenuCard(String)"> And User clicks the "<strong>West</strong>" menu card </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 00s 376ms 
+          </div> 
+          <div class="col-1 text-right"> 
+           <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-1 text-left">
+           5.
+          </div> 
+          <div class="col-8 text-left"> 
+           <span data-toggle="tooltip" title="DestinationPageSteps.verifyDestinationPageContents(String)"> Then User is navigated to the "<strong>West</strong>" page </span> 
+          </div> 
+          <div class="col-2 text-left small">
+            0m 12s 133ms 
           </div> 
           <div class="col-1 text-right"> 
            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
@@ -175,7 +226,7 @@
            <i>BaseSteps.tearDown()</i> 
           </div> 
           <div class="col-2 text-left small">
-            0m 02s 046ms 
+            0m 02s 038ms 
           </div> 
           <div class="col-1 text-right"> 
            <i class="text-success cluecumber-icon icon-passed" data-toggle="tooltip" title="passed"></i> 
@@ -189,7 +240,7 @@
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.4.2], 2018/11/05 00:23:07.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.4.2], 2018/11/05 04:17:42.</span> 
    </div> 
   </footer> 
   <script src="js/jquery.min.js"></script> 
@@ -226,18 +277,24 @@
       "Step 1",
       "Step 2",
       "Step 3",
+      "Step 4",
+      "Step 5",
       "After 1"
     ],
     "datasets": [
       {
         "data": [
-          11068,
-          40628,
-          8039,
-          3002,
-          2046
+          12500,
+          23108,
+          1398,
+          13869,
+          376,
+          12133,
+          2038
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -253,9 +310,13 @@
           0,
           0,
           0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -271,9 +332,13 @@
           0,
           0,
           0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",

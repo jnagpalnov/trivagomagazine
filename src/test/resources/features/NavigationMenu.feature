@@ -15,3 +15,7 @@ Feature: NavigationMenu
     Examples:
       |Destination|
       |West|
+      |Southwest|
+      |Midwest|
+      |Northeast|
+      |Southeast|
