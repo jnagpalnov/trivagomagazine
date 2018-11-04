@@ -22,7 +22,7 @@
   </ul>
   <h3>Running Tests:</h3>
   <ul>
-  <li>Run the "src/test/java/testrunner/Runner" class</li>
+  <li><b>Run the "src/test/java/testrunner/Runner" class</b></li>
  <img src="https://preview.ibb.co/eufq50/first.png" alt="first" border="0">
  <br/>
  <h3>Test-Reports</h3>
